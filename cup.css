@@ -1,0 +1,109 @@
+*{
+    background-color: #8acdeb;
+}
+#container{
+    position: absolute;
+    top:40%;
+    left: 30%;
+}
+.fumee{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top:30%;
+    left:40%;
+}
+@-webkit-keyframes effet1{
+    0%{
+        opacity: 0.5;
+        transform: scale(0.5) translateX(0) translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform:scale(1)
+        translateX(-20px)
+        translateY(-200px);
+    }
+}
+@keyframes effet1{
+    0%{
+        opacity: 1;transform: scale(0.5) translateX(0) translateY(0);
+        }
+    100%{opacity: 0;transform: scale(1) translateX(-20px) translateY(-200px);
+        }
+}
+@-webkit-keyframes effet2{
+    0%{
+        opacity: 0.5;
+        transform: scale(0.5) translateX(0) translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform:scale(1)
+        translateX(50px)
+        translateY(-200px);
+    }
+}
+@keyframes effet2{
+    0%{
+        opacity: 0.5;
+        transform: scale(0.5) translateX(0) translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform:scale(1)
+        translateX(50px)
+        translateY(-200px);
+    }
+}
+#bulle1 {
+    -webkit-animation: effet1 4s ease-out  infinite;
+    animation: effet1 4s ease-out  infinite;
+}
+#bulle2 {
+    -webkit-animation: effet2 4s ease-out 0.5s infinite;
+    animation: effet2 4s ease-out 0.5s infinite;
+}
+#bulle3 {
+    -webkit-animation: effet1 4s ease-out 1s infinite;
+    animation: effet1 4s ease-out 1s infinite;
+}
+#bulle4 {
+    -webkit-animation: effet2 4s ease-out 1.5s  infinite;
+    animation: effet2 4s ease-out 1.5s infinite;
+}
+#body{
+    background-color: white;
+    border-radius: 0 0 120px 120px;
+    height: 150px;
+    width: 200px;
+}
+#hanse{
+    position: relative;
+    left:185px;
+    top: -150px;
+    border: 15px white solid;
+    border-radius: 0 100% 100% 0;
+    height: 50px;
+    width: 50px;
+}
+#soucoupe{
+background-color: white;
+height: 20px;
+width: 220px;
+position: relative;
+top: -90px;
+left:-10px;
+border-radius: 0 0 20px 20px;
+}
+#ombre{
+    height: 4px;
+    width: 220px;
+    background-color: rgb(172, 170, 170);
+    border-radius: 50%;
+    position: relative;
+    top:-90px;
+    left: -10px;
+}

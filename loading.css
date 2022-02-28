@@ -1,0 +1,48 @@
+*{
+    background-color: beige;
+}
+.container{
+    position: absolute;
+display: flex;
+justify-content: space-around;
+width: 25%;
+top: 40%;
+left: 38%;
+}
+@-webkit-keyframes grossi{
+    0%{transform: scale(0.6);}100%{transform: scale(1);}
+}
+@keyframes grossi{
+    0%{transform: scale(0.6);}100%{transform: scale(1);}
+}
+@-webkit-keyframes petit{
+    0%{transform: scale(1);}100%{transform: scale(0.6);}
+}
+@keyframes petit{
+    0%{transform: scale(1);}100%{transform: scale(0.6);}
+}
+.boule{
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.container :nth-child(1){
+    -webkit-animation: grossi  1s ease infinite; animation: grossi 1s ease infinite;
+    }
+.container :nth-child(2){
+    -webkit-animation: grossi 1s ease 0.3s infinite; animation: grossi 1s ease 0.3s infinite;
+    }
+.container :nth-last-child(1){
+-webkit-animation: grossi 1s ease 0.6s  infinite; animation: grossi 1s ease 0.6s infinite;
+    } 
+
+    .container :nth-child(1){
+        -webkit-animation: petit  1s ease 1s infinite; animation: petit 1s ease 1s infinite;
+        }
+    .container :nth-child(2){
+        -webkit-animation: petit 1s ease 1.3s infinite; animation: petit 1s ease 1.3s infinite;
+        }
+    .container :nth-last-child(1){
+    -webkit-animation: petit 1s ease 1.6s  infinite; animation: petit 1s ease 1.6s infinite;
+        } 

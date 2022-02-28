@@ -1,0 +1,57 @@
+.rect{
+    height: 50vh;
+    width: 15vh;
+    position: absolute;
+    top: 20vh;left:50vh;
+    border-radius: 5px;
+    transform-origin: center 90%;
+}
+.rouge{background-color: red;z-index:6;animation: pivotrouge 3s linear infinite;}
+.orange{background-color: orangered;z-index: 5;animation: pivotorange 3s linear infinite;}
+.jaune{background-color: yellow;z-index: 4;animation: pivotjaune 3s linear infinite;}
+.vert{background-color: green;z-index: 3;animation: pivotvert 3s linear infinite;}
+.bleu{background-color: blue;z-index: 2;animation: pivotbleu 3s linear infinite;}
+.mauve{background-color: blueviolet;z-index: 1;animation: pivotmauve 3s linear infinite;}
+
+@keyframes pivotrouge{
+   0%,30%{transform: rotateZ(0);}
+   30%,70%{transform: rotateZ(75deg);}
+   70%,100%{transform: rotateZ(0);}
+}
+@keyframes pivotorange{
+    0%,30%{transform: rotateZ(0);}
+    30%,70%{transform: rotateZ(45deg);}
+    70%,100%{transform: rotateZ(0);}
+ }
+ @keyframes pivotjaune{
+    0%,30%{transform: rotateZ(0);}
+    30%,70%{transform: rotateZ(15deg);}
+    70%,100%{transform: rotateZ(0);}
+ }
+ @keyframes pivotvert{
+    0%,30%{transform: rotateZ(0);}
+    30%,70%{transform: rotateZ(-15deg);}
+    70%,100%{transform: rotateZ(0);}
+ }
+ @keyframes pivotbleu{
+     0%,30%{transform: rotateZ(0);}
+     30%,70%{transform: rotateZ(-45deg);}
+     70%,100%{transform: rotateZ(0);}
+  }
+  @keyframes pivotmauve{
+     0%,30%{transform: rotateZ(0);}
+     30%,70%{transform: rotateZ(-75deg);}
+     70%,100%{transform: rotateZ(0);}
+  }
+ .attache{
+     width: 3vh;
+     height: 3vh;
+     background-color: aliceblue;
+     border: solid 1vh black;
+    border-radius: 100%;
+    position: absolute;
+    top: 62vh;left:55.5vh;
+    z-index: 7;
+
+
+ }

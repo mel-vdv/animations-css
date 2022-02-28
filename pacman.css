@@ -1,0 +1,52 @@
+.container{
+    height: 50vh;
+    width: 50vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pacman{
+    height: 10vh;
+    width: 20vh;
+    background-color: yellow;
+    border-radius: 0 0 10vh 10vh;
+    position: absolute;
+    top:27vh;
+    left:0;
+    z-index: 2;
+}
+.oeil{
+    background-color: black;
+    border-radius: 100%;
+    height: 2vh;width: 2vh;
+    position: relative;
+    top:3vh;left:4vh;
+}
+@keyframes eatbas{
+    0%{transform: rotateZ(0)}50%{transform: rotateZ(35deg)}100%{transform: rotateZ(0)}
+}
+
+#bas{
+    animation: eatbas 1s linear infinite;
+}
+@keyframes eathaut{
+    0%{transform: rotateZ(180deg)}50%{transform: rotateZ(145deg)}100%{transform: rotateZ(180deg)}
+}
+#haut{
+    top: 17vh;
+    animation: eathaut 1s linear infinite;
+}
+  
+.popcorn{
+    background-color: white;
+    border-radius: 100%;
+    height: 5vh;width: 5vh;
+    z-index: 0}
+
+@keyframes reculer{
+    0%{transform: translateX(0)}100%{transform: translateX(-20vh)}
+}
+.popcorn{
+    animation: reculer 1s linear infinite;
+}

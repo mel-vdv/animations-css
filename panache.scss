@@ -1,0 +1,32 @@
+.container{
+    height: 50vh;
+    width:50vh;
+    background-size: cover;
+    background-image: url(./profil.jpg);
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(11,1fr);
+}
+.container div:nth-child(even){
+    background-color: black;
+}
+.container div:nth-child(odd){
+    background-color: white;
+}
+@keyframes disparait{
+  to{
+        opacity: 0;
+    }
+}
+.container > div{
+    animation: disparait 2s linear ;
+    animation-fill-mode: forwards;
+}
+@for $i from 1 through 121 {
+    .container > div:nth-child(#{$i}) {
+      animation-delay: (random(121) / 20) + s;
+    }
+  }
+
+

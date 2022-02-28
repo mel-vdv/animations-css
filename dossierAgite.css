@@ -1,0 +1,41 @@
+.container{
+    position: absolute;
+    top: 100px;left:100px;
+    animation: agitation 2s linear infinite;
+}
+.couvercle{
+    background-color: orange;
+    width: 100px;height: 9px;
+}
+.dossier{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+}
+@keyframes agitation{
+0%{
+transform: rotateZ(0);
+}
+15%{
+    transform: rotateZ(-15deg);
+}
+20%{
+    transform: rotateZ(15deg);
+}
+25%{
+    transform: rotateZ(-10deg);
+}
+30%{
+    transform: rotateZ(10deg);
+}
+35%{
+    transform: rotateZ(-6deg);
+}
+40%,100%{
+    transform: rotateZ(0);
+
+}
+}
