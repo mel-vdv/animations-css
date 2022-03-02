@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ciel-etoile.css">   
+    
+</head>
+
+<body> 
+    <div class="ciel">
+        <div class="etoile"></div>
+    </div>
+<script>
+
+//window.document.addEventListener('onload',ok());
+
+function getRandom(min,max){
+    return Math.floor(Math.random()*(max-min))+min;
+}
+const ciel = document.querySelector('.ciel'); 
+function ok(){
+
+for(let n=0;n<300;n++){
+    const taille = (getRandom(0,100)/100)+'px';
+    const positionx = (getRandom(0,100))+'vw';
+    const positiony = (getRandom(0,100))+'vh';
+    const star = document.createElement('div');
+    const duree = (getRandom(8,40)/10)+'s';
+    star.style.height= taille;star.style.width= taille;
+    star.style.position = 'relative';
+    star.style.top = positiony;
+    star.style.left = positionx;
+    star.style.backgroundColor= 'white';
+    star.style.borderRadius = '100%';
+    //comme ya du random, on met pas dans css:
+    star.style.animationIterationCount= 'infinite';
+    star.style.animationName='briller';
+    star.style.animationDuration= duree;
+    ciel.appendChild(star);
+}
+};
+ok();
+    </script>
+
+   
+ 
+</body>
+</html>
